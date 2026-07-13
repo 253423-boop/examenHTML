@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickStyle - Catálogo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logotipo KickStyle">
+            <h1>KICK<span>STYLE</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="menu.html" class="active">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">Nuestro Catálogo</h2>
+
+        <!-- Filtros: se agregaron las categorías Niños y Niñas -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterCatalog('todos', event)">Todos</button>
+            <button class="filter-btn" onclick="filterCatalog('damas', event)">Damas</button>
+            <button class="filter-btn" onclick="filterCatalog('caballeros', event)">Caballeros</button>
+            <button class="filter-btn" onclick="filterCatalog('ninos', event)">Niños</button>
+            <button class="filter-btn" onclick="filterCatalog('ninas', event)">Niñas</button>
+        </div>
+
+        <!-- 6 modelos por categoría: imagen, nombre, precio y categoría -->
+        <div class="grid-container" id="catalogGrid">
+            <div class="card product-item caballeros">
+                <div class="card-img">
+                    <img src="img1.jpg" alt="Court Pro Spectrum">
+                </div>
+                <div class="card-info">
+                    <h3>Court Pro Spectrum</h3>
+                    <p class="categoria">Caballeros</p>
+                    <p class="price">$2,499.00</p>
+                </div>
+            </div>
+            <div class="card product-item caballeros">
+                <div class="card-img">
+                    <img src="img2.jpg" alt="Court Lite Negro">
+                </div>
+                <div class="card-info">
+                    <h3>Court Lite Negro</h3>
+                    <p class="categoria">Caballeros</p>
+                    <p class="price">$1,899.00</p>
+                </div>
+            </div>
+            <div class="card product-item caballeros">
+                <div class="card-img">
+                    <img src="img3.jpg" alt="Runner Max Carbon">
+                </div>
+                <div class="card-info">
+                    <h3>Runner Max Carbon</h3>
+                    <p class="categoria">Caballeros</p>
+                    <p class="price">$2,199.00</p>
+                </div>
+            </div>
+            <div class="card product-item caballeros">
+                <div class="card-img">
+                    <img src="img4.jpg" alt="Street Classic GT">
+                </div>
+                <div class="card-info">
+                    <h3>Street Classic GT</h3>
+                    <p class="categoria">Caballeros</p>
+                    <p class="price">$1,650.00</p>
+                </div>
+            </div>
+            <div class="card product-item caballeros">
+                <div class="card-img">
+                    <img src="img1.jpg" alt="Ace Trainer Pro">
+                </div>
+                <div class="card-info">
+                    <h3>Ace Trainer Pro</h3>
+                    <p class="categoria">Caballeros</p>
+                    <p class="price">$1,950.00</p>
+                </div>
+            </div>
+            <div class="card product-item caballeros">
+                <div class="card-img">
+                    <img src="img2.jpg" alt="Urban Flex Dark">
+                </div>
+                <div class="card-info">
+                    <h3>Urban Flex Dark</h3>
+                    <p class="categoria">Caballeros</p>
+                    <p class="price">$1,480.00</p>
+                </div>
+            </div>
+            <div class="card product-item damas">
+                <div class="card-img">
+                    <img src="img3.jpg" alt="Urban Cloud Rosa">
+                </div>
+                <div class="card-info">
+                    <h3>Urban Cloud Rosa</h3>
+                    <p class="categoria">Damas</p>
+                    <p class="price">$1,549.00</p>
+                </div>
+            </div>
+            <div class="card product-item damas">
+                <div class="card-img">
+                    <img src="img4.jpg" alt="Lite Court Blanco">
+                </div>
+                <div class="card-info">
+                    <h3>Lite Court Blanco</h3>
+                    <p class="categoria">Damas</p>
+                    <p class="price">$1,699.00</p>
+                </div>
+            </div>
+            <div class="card product-item damas">
+                <div class="card-img">
+                    <img src="img1.jpg" alt="Bella Step Platform">
+                </div>
+                <div class="card-info">
+                    <h3>Bella Step Platform</h3>
+                    <p class="categoria">Damas</p>
+                    <p class="price">$1,420.00</p>
+                </div>
+            </div>
+            <div class="card product-item damas">
+                <div class="card-img">
+                    <img src="img2.jpg" alt="Court Grace W">
+                </div>
+                <div class="card-info">
+                    <h3>Court Grace W</h3>
+                    <p class="categoria">Damas</p>
+                    <p class="price">$1,780.00</p>
+                </div>
+            </div>
+            <div class="card product-item damas">
+                <div class="card-img">
+                    <img src="img3.jpg" alt="Flex Runner Pearl">
+                </div>
+                <div class="card-info">
+                    <h3>Flex Runner Pearl</h3>
+                    <p class="categoria">Damas</p>
+                    <p class="price">$1,590.00</p>
+                </div>
+            </div>
+            <div class="card product-item damas">
+                <div class="card-img">
+                    <img src="img4.jpg" alt="City Walk Blush">
+                </div>
+                <div class="card-info">
+                    <h3>City Walk Blush</h3>
+                    <p class="categoria">Damas</p>
+                    <p class="price">$1,350.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninos">
+                <div class="card-img">
+                    <img src="img1.jpg" alt="Mini Court Kids">
+                </div>
+                <div class="card-info">
+                    <h3>Mini Court Kids</h3>
+                    <p class="categoria">Niños</p>
+                    <p class="price">$899.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninos">
+                <div class="card-img">
+                    <img src="img2.jpg" alt="Speedy Jr Negro">
+                </div>
+                <div class="card-info">
+                    <h3>Speedy Jr Negro</h3>
+                    <p class="categoria">Niños</p>
+                    <p class="price">$949.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninos">
+                <div class="card-img">
+                    <img src="img3.jpg" alt="Play Runner Boy">
+                </div>
+                <div class="card-info">
+                    <h3>Play Runner Boy</h3>
+                    <p class="categoria">Niños</p>
+                    <p class="price">$820.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninos">
+                <div class="card-img">
+                    <img src="img4.jpg" alt="Turbo Kid Sport">
+                </div>
+                <div class="card-info">
+                    <h3>Turbo Kid Sport</h3>
+                    <p class="categoria">Niños</p>
+                    <p class="price">$980.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninos">
+                <div class="card-img">
+                    <img src="img1.jpg" alt="Court Star Junior">
+                </div>
+                <div class="card-info">
+                    <h3>Court Star Junior</h3>
+                    <p class="categoria">Niños</p>
+                    <p class="price">$870.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninos">
+                <div class="card-img">
+                    <img src="img2.jpg" alt="Flash Kid Pro">
+                </div>
+                <div class="card-info">
+                    <h3>Flash Kid Pro</h3>
+                    <p class="categoria">Niños</p>
+                    <p class="price">$920.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninas">
+                <div class="card-img">
+                    <img src="img3.jpg" alt="Sweet Step Rosa">
+                </div>
+                <div class="card-info">
+                    <h3>Sweet Step Rosa</h3>
+                    <p class="categoria">Niñas</p>
+                    <p class="price">$899.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninas">
+                <div class="card-img">
+                    <img src="img4.jpg" alt="Cloud Girl Blanco">
+                </div>
+                <div class="card-info">
+                    <h3>Cloud Girl Blanco</h3>
+                    <p class="categoria">Niñas</p>
+                    <p class="price">$930.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninas">
+                <div class="card-img">
+                    <img src="img1.jpg" alt="Star Runner Girl">
+                </div>
+                <div class="card-info">
+                    <h3>Star Runner Girl</h3>
+                    <p class="categoria">Niñas</p>
+                    <p class="price">$850.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninas">
+                <div class="card-img">
+                    <img src="img2.jpg" alt="Candy Court Jr">
+                </div>
+                <div class="card-info">
+                    <h3>Candy Court Jr</h3>
+                    <p class="categoria">Niñas</p>
+                    <p class="price">$970.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninas">
+                <div class="card-img">
+                    <img src="img3.jpg" alt="Dream Walk Kids">
+                </div>
+                <div class="card-info">
+                    <h3>Dream Walk Kids</h3>
+                    <p class="categoria">Niñas</p>
+                    <p class="price">$880.00</p>
+                </div>
+            </div>
+            <div class="card product-item ninas">
+                <div class="card-img">
+                    <img src="img4.jpg" alt="Lily Sport Mini">
+                </div>
+                <div class="card-info">
+                    <h3>Lily Sport Mini</h3>
+                    <p class="categoria">Niñas</p>
+                    <p class="price">$910.00</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER: icono y enlace a redes sociales de la universidad -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/PolitecnicaChis/?locale=es_LA" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+                Facebook UP Chiapas
+            </a>
+        </div>
+    </footer>
+
+    <script src="dinamico.js"></script>
+</body>
+</html>

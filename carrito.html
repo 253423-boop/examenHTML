@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickStyle - Carrito de Compra</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logotipo KickStyle">
+            <h1>KICK<span>STYLE</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="menu.html">Catálogo</a></li>
+                <li><a href="carrito.html" class="active">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">Carrito de Compra</h2>
+
+        <div class="cart-wrapper">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Nombre del Producto</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cartBody">
+                    <!-- 4 ejemplos -->
+                    <tr data-precio="2499.00">
+                        <td class="producto"><img src="img1.jpg" alt="Court Pro Spectrum">Court Pro Spectrum</td>
+                        <td>Caballeros</td>
+                        <td class="subtotal">$2,499.00</td>
+                        <td><input type="number" min="1" value="1" onchange="actualizarTotal()"></td>
+                        <td><button class="btn-eliminar" onclick="eliminarProducto(this)" title="Eliminar">&#128465;</button></td>
+                    </tr>
+                    <tr data-precio="1549.00">
+                        <td class="producto"><img src="img3.jpg" alt="Urban Cloud Rosa">Urban Cloud Rosa</td>
+                        <td>Damas</td>
+                        <td class="subtotal">$1,549.00</td>
+                        <td><input type="number" min="1" value="2" onchange="actualizarTotal()"></td>
+                        <td><button class="btn-eliminar" onclick="eliminarProducto(this)" title="Eliminar">&#128465;</button></td>
+                    </tr>
+                    <tr data-precio="899.00">
+                        <td class="producto"><img src="img2.jpg" alt="Mini Court Kids">Mini Court Kids</td>
+                        <td>Niños</td>
+                        <td class="subtotal">$899.00</td>
+                        <td><input type="number" min="1" value="1" onchange="actualizarTotal()"></td>
+                        <td><button class="btn-eliminar" onclick="eliminarProducto(this)" title="Eliminar">&#128465;</button></td>
+                    </tr>
+                    <tr data-precio="930.00">
+                        <td class="producto"><img src="img4.jpg" alt="Cloud Girl Blanco">Cloud Girl Blanco</td>
+                        <td>Niñas</td>
+                        <td class="subtotal">$930.00</td>
+                        <td><input type="number" min="1" value="1" onchange="actualizarTotal()"></td>
+                        <td><button class="btn-eliminar" onclick="eliminarProducto(this)" title="Eliminar">&#128465;</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Total en la parte inferior derecha -->
+            <div class="cart-total">
+                <div class="total-box">Total: <span id="cartTotal">$0.00</span></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="dinamico.js"></script>
+</body>
+</html>
